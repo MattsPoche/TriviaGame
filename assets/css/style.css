@@ -1,0 +1,12 @@
+.choicebutton{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-top: 5px;
+}
+.choicebutton:hover{
+    background-color: grey;
+}
+.choicebutton:active{
+    background-color: yellow;
+}
