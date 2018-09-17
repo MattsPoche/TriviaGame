@@ -1,12 +1,57 @@
+* { padding: 0; margin: 0; }
+
+html, body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  flex-shrink: 0;
+  background-color: floralwhite;
+}
+
+img{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.gamescreen{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    height: 100%;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .choicebutton{
     color: white;
-    background-color: black;
+    background-color: forestgreen;
     padding: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .choicebutton:hover{
-    background-color: grey;
+    background-color: greenyellow;
 }
 .choicebutton:active{
     background-color: yellow;
+}
+
+#timeLabel{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+}
+#timeRemaining{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+}
+#question{
+    padding: 5px;
+    margin-top: 10px;
+    background-color: azure;
 }

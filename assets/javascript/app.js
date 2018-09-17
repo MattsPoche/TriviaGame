@@ -35,6 +35,7 @@ $(document).ready(function(){
     
     function reset(){
         state = gameState.GAMESTART;
+        gameState.questionNum = 0;
         gameState.cor = 0;
         gameState.wro = 0;
         $("#correct").text("");
@@ -134,9 +135,12 @@ $(document).ready(function(){
     var state = gameState.GAMESTART;
     //questions
     var questionList = [];
-    questionList.push(new Question("what color is the sky?", ["red", "blue", "green"], 1));
-    questionList.push(new Question("what is 1+1", ["1", "2", "3"], 1));
-    
+    questionList.push(new Question("The cradle of the Sumerian civilization was the delta of the Euphrates and Tigris rivers. In what modern-day nation is this located?", ["Turkey", "Greece", "Mongolia","Iraq"], 3));
+    questionList.push(new Question("Of the 25 great civilizations, this was the most durable, lasting almost 4,000 years.", ["Greek", "Egyptian", "Phoenician","Harappa"], 1));
+    questionList.push(new Question("The Indian (or Indus Valley) civilization was born around 2500 BC. It collapsed around 1500 BC when it was destroyed by invading ________.", ["Vandals", "Huns", "Aryans","Goths"], 2));
+    questionList.push(new Question("The Minoan civilization, located in the Mediterranean Sea, lasted from 2000 to 1380 BC. In Minoan art, which animal symbolized the goddess?", ["Bull", "Bird", "Cow","Snake"], 3));
+    questionList.push(new Question("The Hittite empire lasted from 1900-1200 BC. What was its capital?", ["Harappa", "Hattusas", "Laconia", "Cilicia"], 1));
+
     display();
 
     //onclick event
